@@ -2,6 +2,7 @@ const pluginConf = require('../../config/pluginConf')
 module.exports = {
     title: '雨凡技术栈',
     description: '一个前端菜鸟的踩坑之路',
+    base: "/yufanBlog/",
     plugins:pluginConf,
     themeConfig: {
         nav: [
@@ -34,7 +35,7 @@ module.exports = {
                     title: '分组',
                     collapsable: false,
                     children: [
-                        '',    
+                        '',
                         'self1',
                         'self2',
                         'self3',
@@ -50,9 +51,7 @@ module.exports = {
             ],
             // fallback
             '/': [
-              '',        /* / */
-              'contact', /* /contact.html */
-              'about'    /* /about.html */
+              '',        
             ]
           }
       }
