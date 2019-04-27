@@ -1,3 +1,4 @@
+const secretKeyConf = require('./secretKeyConf')
 module.exports = {
     '@vuepress/back-to-top': true,
     '@vuepress/pwa': {
@@ -7,4 +8,7 @@ module.exports = {
           buttonText: "刷新"
         }
     },
+    '@vuepress/google-analytics':{
+        'ga': secretKeyConf.ga
+    }
 }

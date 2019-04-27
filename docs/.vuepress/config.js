@@ -1,6 +1,7 @@
 const pluginConf = require('../../config/pluginConf');
 const navConf = require('../../config/navConf');
 const sidebarConf = require('../../config/sidebarConf/index');
+const headConf = require('../../config/headConf');
 module.exports = {
     title: '雨凡技术栈',
     description: '一个前端菜鸟的踩坑之路',
@@ -10,10 +11,7 @@ module.exports = {
         lang: 'zh-CN',
       }
     },
-    head: [
-      ['link', { rel: 'icon', href: '/favicon32x32.ico' }],
-      ['link', { rel: 'manifest', href: '/manifest.json' }],
-    ],
+    head: headConf,
     plugins:pluginConf,
     themeConfig: {
       nav: navConf,
