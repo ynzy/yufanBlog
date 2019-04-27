@@ -1,5 +1,7 @@
 # 个人简历
 
+这里更新了新内容
+![图片](../../.vuepress/public/icons/home.gif)
 自动生成侧栏
 如果你希望自动生成一个仅仅包含了当前页面标题（headers）链接的侧边栏，你可以通过 YAML front matter 来实现：
 
