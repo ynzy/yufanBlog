@@ -1,8 +1,8 @@
 ---
 home: true
 heroImage: /icons/icon.png
-actionText: 快速阅读 →
-actionLink: /zh/guide/
+actionText: 关于我 →
+actionLink: /about/SelfIntroduction/
 features:
 - title: 简洁至上
   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
@@ -14,3 +14,5 @@ footer: MIT Licensed | Copyright © 2018-present Evan You
 ---
 
 <!-- # Hello Press! -->
+
+<!-- <HomeLayout></HomeLayout> -->

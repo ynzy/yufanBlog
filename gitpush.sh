@@ -3,6 +3,6 @@ set -e
 
 git add .
 git commit -m '更新内容'
-git push
+git push -f git@github.com:ynzy/yufanBlog.git master
 
 cd -
