@@ -2,10 +2,10 @@
 
 const CurriculumVitae = require('./about/CurriculumVitae/index');
 const SelfIntroduction = require('./about/SelfIntroduction/index');
-const about = require('./about/index')
+const About = require('./About/index')
 module.exports = {
-    '/about/CurriculumVitae/': CurriculumVitae,
-    '/about/SelfIntroduction/': SelfIntroduction,
+    '/About/CurriculumVitae/': CurriculumVitae,
+    '/About/SelfIntroduction/': SelfIntroduction,
     // '/about':about
     // '/': ['']
 };
