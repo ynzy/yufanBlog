@@ -81,23 +81,23 @@ module.exports = [
         text: 'Vue',
         items: [
             { text: '基础篇', items: [
-                { text: '基础语法', link: '' },
-                { text: '计算属性', link: '' },
-                { text: '表单与v-model', link: '' },
-                { text: '组件', link: '' },
-                { text: '自定义指令', link: '' },
+                { text: '基础语法', link: '/Vue/Basic/BasicGrammar/' },
+                { text: '计算属性', link: '/Vue/Basic/Computed/' },
+                { text: '表单与v-model', link: '/Vue/Basic/FormModel/' },
+                { text: '组件', link: '/Vue/Basic/Component/' },
+                { text: '自定义指令', link: '/Vue/Basic/CustomInstruction/' },
             ]},
             { text: '进阶篇', items: [
-                { text: 'Render函数', link: '' },
-                { text: 'webpack', link: '' },
-                { text: 'Vue-router', link: '' },
-                { text: 'Vuex', link: '' },
+                { text: 'Render函数', link: '/Vue/Advance/RenderFaction/' },
+                { text: 'webpack', link: '/Vue/Advance/WebPack/' },
+                { text: 'Vue-router', link: '/Vue/Advance/VueRouter/' },
+                { text: 'Vuex', link: '/Vue/Advance/Vuex/' },
             ]},
             { text: '实战', items: [
-                { text: '硅谷外卖', link: '' },
+                { text: '硅谷外卖', link: '/Vue/VueAction/gushop/' },
             ]},
             { text: 'Vue踩坑', items: [
-                { text: '踩坑', link: '' },
+                { text: '踩坑', link: '/Vue/VuePit/' },
             ]},
         ]
     },
@@ -136,10 +136,10 @@ module.exports = [
         text: '关于',
         items: [
             { text: '关于我', items: [
-            { text: '个人介绍', link: '/about/SelfIntroduction/' },
+            { text: '个人介绍', link: '/About/SelfIntroduction/' },
             ]},
             { text: '个人简历', items: [
-            { text: '简历', link: '/about/CurriculumVitae/' }
+            { text: '简历', link: '/About/CurriculumVitae/' }
             ]}
         ]
     }
