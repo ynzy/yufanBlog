@@ -11,6 +11,7 @@ const Advance = require('./Vue/Advance/index');
 const RenderFaction = require('./Vue/Advance/RenderFaction');
 const WebPack = require('./Vue/Advance/WebPack');
 const VueRouter = require('./Vue/Advance/VueRouter');
+
 const Vuex = require('./Vue/Advance/Vuex');
 
 const VueAction = require('./Vue/VueAction/index');
@@ -19,10 +20,12 @@ const gushop = require('./Vue/VueAction/gushop');
 
 const VuePit = require('./Vue/VuePit/index');
 
+const VuePress = require('./Others/Blog/VuePress');
+const Hexo = require('./Others/Blog/Hexo');
+const nvmnrm = require('./Others/devEnvironment/nvmnrm');
 
 
-
-
+const link = require('../link.js');
 module.exports = {
     //关于我
     '/About/CurriculumVitae/': CurriculumVitae,
@@ -42,6 +45,10 @@ module.exports = {
     '/Vue/VueAction/gushop/': gushop,
     //vue踩坑
     '/Vue/VuePit/': VuePit,
+    //其他
+    '/Others/Blog/Hexo/': Hexo,
+    '/Others/Blog/VuePress/': VuePress,
+    '/Others/devEnvironment/nvmnrm/': nvmnrm,
 
 
     

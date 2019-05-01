@@ -1,3 +1,6 @@
+---
+title: 'vuepress插件'
+---
 # 插件列表
 为了方便的统一管理 plugin，需要对 `docs/.vuepress/config.js` 进行配置：
 ```js
