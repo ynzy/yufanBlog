@@ -1,6 +1,6 @@
 const utils = {
     //生成侧边栏
-    genSidebar: function(title, children = [''], collapsable = false, sidebarDepth = 1) {
+    genSidebar: function(title, children = [''], collapsable = false, sidebarDepth = 3) {
         return {
             title,   // 必要的
             children,

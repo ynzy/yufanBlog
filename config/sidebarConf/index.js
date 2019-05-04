@@ -1,6 +1,8 @@
+//关于
 const CurriculumVitae = require('./About/CurriculumVitae/index');
 const SelfIntroduction = require('./About/SelfIntroduction/index');
 
+//vue
 const BasicGrammar = require('./Vue/Basic/BasicGrammar');
 const Computed = require('./Vue/Basic/Computed');
 const FormModel = require('./Vue/Basic/FormModel');
@@ -16,13 +18,14 @@ const Vuex = require('./Vue/Advance/Vuex');
 
 const VueAction = require('./Vue/VueAction/index');
 const gushop = require('./Vue/VueAction/gushop');
-
-
+const JFCitySelector = require('./Vue//VueAction/JFCitySelector.js');
+const proProcess = require('./Vue//VueAction/proProcess');
 const VuePit = require('./Vue/VuePit/index');
-
+//其他
 const VuePress = require('./Others/Blog/VuePress');
 const Hexo = require('./Others/Blog/Hexo');
 const nvmnrm = require('./Others/devEnvironment/nvmnrm');
+const mock = require('./Others/analogData/mock');
 
 
 const link = require('../link.js');
@@ -43,13 +46,15 @@ module.exports = {
     '/Vue/Advance/Vuex/': Vuex,
     //vue实战
     '/Vue/VueAction/gushop/': gushop,
+    '/Vue/VueAction/JFCitySelector/': JFCitySelector,
+    '/Vue/VueAction/proProcess/': proProcess,
     //vue踩坑
     '/Vue/VuePit/': VuePit,
     //其他
     '/Others/Blog/Hexo/': Hexo,
     '/Others/Blog/VuePress/': VuePress,
     '/Others/devEnvironment/nvmnrm/': nvmnrm,
-
+    '/Others/analogData/mock/': mock
 
     
     // '/about':about

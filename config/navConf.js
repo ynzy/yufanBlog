@@ -95,7 +95,10 @@ module.exports = [
                 { text: 'Vuex', link: '/Vue/Advance/Vuex/' },
             ]},
             { text: '实战', items: [
-                { text: '硅谷外卖', link: '/Vue/VueAction/gushop/' },
+                { text: '硅谷外卖', link: '/Vue/VueAction/gushop/硅谷外卖day01/' },
+                { text: '仿美团项目', link: '/Vue/VueAction/JFCitySelector/' },
+                { text: '项目总结', link: '/Vue/VueAction/proProcess/vue-cli3项目创建-配置-发布/' },                
+                
             ]},
             { text: 'Vue踩坑', items: [
                 { text: '踩坑', link: '/Vue/VuePit/' },
@@ -129,6 +132,9 @@ module.exports = [
             { text: '博客', items: [
                 { text: 'hexo', link: '/Others/Blog/Hexo/' },
                 { text: 'VuePress', link: '/Others/Blog/VuePress/vuepress基础搭建/' },
+            ]},
+            { text: '模拟数据', items: [
+                { text: 'mockjs', link: '/Others/analogData/mock/easy-mock本地部署过程/' },
             ]},
         ]
     },

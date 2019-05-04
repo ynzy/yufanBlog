@@ -1,5 +1,5 @@
 <!-- docs/.vuepress/components/Valine.vue -->
-
+<!-- 关闭评论：在md开头配置 `frontmatter` 中添加 `comment:false` 即可 -->
 <template>
   <div class="ValineComment" v-if="comment">
     <!-- <hr>
@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  name: 'Valine',
   computed: {
     comment: function() {
       let { comment } = this.$frontmatter;
