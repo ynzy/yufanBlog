@@ -105,19 +105,19 @@ module.exports = [
             ]},
         ]
     },
-    // {
-    //     text: '混合开发',
-    //     items: [
-    //         { text: 'apicloud', items: [
-    //             { text: 'apicloud学习', link: '/HybridApp/' },
-    //             { text: 'apicloud踩坑', link: '/HybridApp/' },
-    //         ]},
-    //         { text: 'Dcloud', items: [
-    //             { text: 'uni-app', link: '/HybridApp/' },
-    //             { text: 'Dcloud踩坑', link: '/HybridApp/' },
-    //         ]},
-    //     ]
-    // },
+    {
+        text: '混合开发',
+        items: [
+            // { text: 'apicloud', items: [
+            //     { text: 'apicloud学习', link: '/HybridApp/' },
+            //     { text: 'apicloud踩坑', link: '/HybridApp/' },
+            // ]},
+            { text: 'Dcloud', items: [
+                { text: 'uni-app', link: '/HybridApp/Dclound/uni-app/初识uni-app/' },
+                { text: 'Dcloud踩坑', link: '/HybridApp/Dclound/DcloudPit/' },
+            ]},
+        ]
+    },
     {
         text: '其他综合',
         items: [

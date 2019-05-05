@@ -26,7 +26,7 @@ const VuePress = require('./Others/Blog/VuePress');
 const Hexo = require('./Others/Blog/Hexo');
 const nvmnrm = require('./Others/devEnvironment/nvmnrm');
 const mock = require('./Others/analogData/mock');
-
+const uniapp = require('./HybridApp/Dclound/uni-app');
 
 const link = require('../link.js');
 module.exports = {
@@ -50,6 +50,8 @@ module.exports = {
     '/Vue/VueAction/proProcess/': proProcess,
     //vue踩坑
     '/Vue/VuePit/': VuePit,
+    //混合开发
+    '/HybridApp/Dclound/uni-app/': uniapp,
     //其他
     '/Others/Blog/Hexo/': Hexo,
     '/Others/Blog/VuePress/': VuePress,

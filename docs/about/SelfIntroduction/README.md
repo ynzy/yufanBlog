@@ -5,9 +5,9 @@ sidebar: false
 * 个人git仓库地址，[github](https://github.com/ynzy)
 * [简书](https://www.jianshu.com/u/a119a26f3e98)
 * [可视化在线简历](https://yunyifei.github.io/#/)
-* [个人简历](../CurriculumVitae/)
+* [个人在线简历](../CurriculumVitae/)
 
-&ensp;&ensp;&ensp;&ensp;本人从2015年7月进入大学接触软件开发，起初学习的是java，javaWeb后端开发，后来在2018年初，转战到前端开发，学习的主要渠道就是网络，例如有慕课网，极客学院，菜鸟教程，51cto学院，黑马程序员，哔哩哔哩等等公开的学习资料，除此之外还会通过中国大学来学习计算机专业的有关课程，在校学习过C语言，c#，java，javaWeb，SQLserver，但是学的不深入，当时对于Java基础掌握比较熟练，例类的继承、封装、多态，等特性，还有接口，抽象类，流操作等等的知识点都可以熟练掌握，JavaWeb跟着老师做过一些demo。
+&ensp;&ensp;&ensp;&ensp;本人从2015年9月进入大学接触软件开发，起初学习的是java，javaWeb后端开发，后来在2018年初，转战到前端开发，学习的主要渠道就是网络，例如有慕课网，极客学院，菜鸟教程，51cto学院，黑马程序员，哔哩哔哩等等公开的学习资料，除此之外还会通过中国大学来学习计算机专业的有关课程，在校学习过C语言，c#，java，javaWeb，SQLserver，但是学的不深入，当时对于Java基础掌握比较熟练，例类的继承、封装、多态，等特性，还有接口，抽象类，流操作等等的知识点都可以熟练掌握，JavaWeb跟着老师做过一些demo。
 
 &ensp;&ensp;&ensp;&ensp;后来出于自己的喜爱以及朋友的推荐，转向对于前端开发的学习。知道了大前端的概念，前端可以高效率开发安卓，Ios和windows应用，例如Ionic，React Navite，混合开发等，这些工具可以使用前端技术来开发安卓，IOS应用，虽然性能不如原生，但是现在手机硬件过剩，再加上较高的开发效率，多用来开发新闻资讯，或是商城类的应用。
 
@@ -29,6 +29,6 @@ sidebar: false
 
 &ensp;&ensp;&ensp;&ensp;谢谢
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　前端路上的小白
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;前端路上的小白
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　2019
+&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;2019
