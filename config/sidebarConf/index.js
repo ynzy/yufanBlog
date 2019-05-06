@@ -27,6 +27,7 @@ const Hexo = require('./Others/Blog/Hexo');
 const nvmnrm = require('./Others/devEnvironment/nvmnrm');
 const mock = require('./Others/analogData/mock');
 const uniapp = require('./HybridApp/Dclound/uni-app');
+const DcloudAction  = require('./HybridApp/Dclound/DcloudAction');
 
 const link = require('../link.js');
 module.exports = {
@@ -52,6 +53,7 @@ module.exports = {
     '/Vue/VuePit/': VuePit,
     //混合开发
     '/HybridApp/Dclound/uni-app/': uniapp,
+    '/HybridApp/Dclound/DcloudAction/': DcloudAction,
     //其他
     '/Others/Blog/Hexo/': Hexo,
     '/Others/Blog/VuePress/': VuePress,

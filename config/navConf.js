@@ -114,6 +114,7 @@ module.exports = [
             // ]},
             { text: 'Dcloud', items: [
                 { text: 'uni-app', link: '/HybridApp/Dclound/uni-app/初识uni-app/' },
+                { text: 'Dcloud实战', link: '/HybridApp/Dclound/DcloudAction/超英电影预热项目/' },
                 { text: 'Dcloud踩坑', link: '/HybridApp/Dclound/DcloudPit/' },
             ]},
         ]
