@@ -82,6 +82,7 @@ module.exports = [
         text: 'Vue',
         items: [
             { text: '基础篇', items: [
+                { text: 'vue介绍', link: '/Vue/Basic/Introduce/vue介绍' },
                 { text: '基础语法', link: '/Vue/Basic/BasicGrammar/' },
                 { text: '计算属性', link: '/Vue/Basic/Computed/' },
                 { text: '表单与v-model', link: '/Vue/Basic/FormModel/' },

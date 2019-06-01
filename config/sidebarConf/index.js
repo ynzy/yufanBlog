@@ -3,6 +3,7 @@ const CurriculumVitae = require('./About/CurriculumVitae/index');
 const SelfIntroduction = require('./About/SelfIntroduction/index');
 
 //vue
+const Introduce = require('./Vue/Basic/Introduce');
 const BasicGrammar = require('./Vue/Basic/BasicGrammar');
 const Computed = require('./Vue/Basic/Computed');
 const FormModel = require('./Vue/Basic/FormModel');
@@ -35,6 +36,7 @@ module.exports = {
     '/About/CurriculumVitae/': CurriculumVitae,
     '/About/SelfIntroduction/': SelfIntroduction,
     //vue基础
+    '/Vue/Basic/Introduce/': Introduce,
     '/Vue/Basic/BasicGrammar/': BasicGrammar,
     '/Vue/Basic/Computed/': Computed,
     '/Vue/Basic/FormModel/': FormModel,
