@@ -5,6 +5,7 @@ const SelfIntroduction = require('./About/SelfIntroduction/index');
 const Basic = require('./Angular/Basic/basic');
 
 //vue
+const Introduce = require('./Vue/Basic/Introduce');
 const BasicGrammar = require('./Vue/Basic/BasicGrammar');
 const Computed = require('./Vue/Basic/Computed');
 const FormModel = require('./Vue/Basic/FormModel');
@@ -29,6 +30,7 @@ const Hexo = require('./Others/Blog/Hexo');
 const nvmnrm = require('./Others/devEnvironment/nvmnrm');
 const mock = require('./Others/analogData/mock');
 const uniapp = require('./HybridApp/Dclound/uni-app');
+const DcloudAction  = require('./HybridApp/Dclound/DcloudAction');
 
 const link = require('../link.js');
 module.exports = {
@@ -38,6 +40,7 @@ module.exports = {
     //Angular 基础
     '/Angular/Basic/': Basic,
     //vue基础
+    '/Vue/Basic/Introduce/': Introduce,
     '/Vue/Basic/BasicGrammar/': BasicGrammar,
     '/Vue/Basic/Computed/': Computed,
     '/Vue/Basic/FormModel/': FormModel,
@@ -56,6 +59,7 @@ module.exports = {
     '/Vue/VuePit/': VuePit,
     //混合开发
     '/HybridApp/Dclound/uni-app/': uniapp,
+    '/HybridApp/Dclound/DcloudAction/': DcloudAction,
     //其他
     '/Others/Blog/Hexo/': Hexo,
     '/Others/Blog/VuePress/': VuePress,

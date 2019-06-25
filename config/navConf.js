@@ -90,6 +90,7 @@ module.exports = [
         text: 'Vue',
         items: [
             { text: '基础篇', items: [
+                { text: 'vue介绍', link: '/Vue/Basic/Introduce/vue介绍' },
                 { text: '基础语法', link: '/Vue/Basic/BasicGrammar/' },
                 { text: '计算属性', link: '/Vue/Basic/Computed/' },
                 { text: '表单与v-model', link: '/Vue/Basic/FormModel/' },
@@ -122,6 +123,7 @@ module.exports = [
             // ]},
             { text: 'Dcloud', items: [
                 { text: 'uni-app', link: '/HybridApp/Dclound/uni-app/初识uni-app/' },
+                { text: 'Dcloud实战', link: '/HybridApp/Dclound/DcloudAction/超英电影预热项目/' },
                 { text: 'Dcloud踩坑', link: '/HybridApp/Dclound/DcloudPit/' },
             ]},
         ]

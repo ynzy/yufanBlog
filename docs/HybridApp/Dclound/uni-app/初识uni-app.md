@@ -1,4 +1,6 @@
-# 初识uni-app
+---
+title: 一、初识uni-app
+---
 
 ## uni-app介绍
 uni-app 是一个使用 Vue.js 开发跨平台应用的前端框架，开发者编写一套代码，可编译到iOS、Android、H5、小程序等多个平台。
@@ -113,3 +115,65 @@ App端，在pages.json里的titleNView或页面里写的plus api中涉及的单�
 * 如果设计稿不是750px，HBuilderX提供了**自动换算的工具**，详见：https://ask.dcloud.net.cn/article/35445。
 * App端，在pages.json里的titleNView或页面里写的plus api中涉及的单位，**只支持px**，不支持upx。
 * 动态绑定的 style 不支持直接使用 upx，需要使用方法转换
+
+## 数据绑定
+* v-bind:组件的属性名-> :组件的属性名
+
+## 事件处理器
+几乎全支持 [Vue官方文档：事件处理器](https://cn.vuejs.org/v2/guide/events.html)
+```
+// 事件映射表，左侧为 WEB 事件，右侧为 ``uni-app`` 对应事件
+{
+    click: 'tap',  指触摸后马上离开
+    touchstart: 'touchstart',  手指触摸动作开始
+    touchmove: 'touchmove',  手指触摸后移动
+    touchcancel: 'touchcancel',  手指触摸动作被打断，如来电提醒，弹窗
+    touchend: 'touchend', 手指触摸动作结束
+    tap: 'tap',
+    longtap: 'longtap',  手指触摸后，超过350ms再离开（推荐使用longpress事件代替）
+    input: 'input', 当键盘输入时，触发input事件
+    change: 'change',
+    submit: 'submit',
+    blur: 'blur', 输入框失去焦点时触发
+    focus: 'focus', 输入框聚焦时触发
+    reset: 'reset',  重置事件
+    confirm: 'confirm', 点击完成按钮时触发
+    columnchange: 'columnchange',
+    linechange: 'linechange',
+    error: 'error',
+    scrolltoupper: 'scrolltoupper',  向上滚动
+    scrolltolower: 'scrolltolower',  向下滚动
+    scroll: 'scroll'  滚动事件
+}
+```
+## 条件渲染
+完整支持 [Vue官方文档：条件渲染](https://cn.vuejs.org/v2/guide/conditional.html)
+
+## 列表渲染
+完整vue列表渲染 [Vue官方文档：列表渲染](https://cn.vuejs.org/v2/guide/list.html)
+### key
+如果列表中项目的位置会动态改变或者有新的项目添加到列表中，并且希望列表中的项目保持自己的特征和状态（如 `<input>` 中的输入内容，`<switch>` 的选中状态），需要使用 `:key` 来指定列表中项目的唯一的标识符。
+
+* 使用 v-for 循环 array 中 item 的某个 property，该 property 的值需要是列表中唯一的字符串或数字，且不能动态改变。
+* 使用 v-for 循环中 item 本身，这时需要 item 本身是一个唯一的字符串或者数字
+
+当数据改变触发渲染层重新渲染的时候，会校正带有 key 的组件，框架会确保他们被重新排序，而不是重新创建，以确保使组件保持自身的状态，并且提高列表渲染时的效率。
+
+## 跨端兼容
+uni-app 已将常用的组件、JS API 封装到框架中，开发者按照 uni-app 规范开发即可保证多平台兼容，大部分业务均可直接满足。
+
+但每个平台有自己的一些特性，因此会存在一些无法跨平台的情况。
+
+* 大量写 if else，会造成代码执行性能低下和管理混乱。
+* 编译到不同的工程后二次修改，会让后续升级变的很麻烦。
+
+在 C 语言中，通过 #ifdef、#ifndef 的方式，为 windows、mac 等不同 os 编译不同的代码。 uni-app 参考这个思路，为 uni-app 提供了条件编译手段，在一个工程里优雅的完成了平台个性化实现。
+
+### [条件编译](https://uniapp.dcloud.io/platform?id=%E6%9D%A1%E4%BB%B6%E7%BC%96%E8%AF%91)
+条件编译是里用特殊的注释作为标记，在编译时根据这些特殊的注释，将注释里面的代码编译到不同平台。
+
+**写法**：以 #ifdef 或 #ifndef 加 **%PLATFORM%** 开头，以 #endif 结尾。
+* #ifdef：if defined 仅在某平台存在
+* #ifndef：if not defined 除了某平台均存在
+* **%PLATFORM%**：平台名称
+

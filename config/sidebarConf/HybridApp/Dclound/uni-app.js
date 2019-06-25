@@ -1,5 +1,5 @@
 const utils = require('../../../../utils/index');
-const children = ['初识uni-app', '电影预热项目']
+const children = ['初识uni-app', 'flex布局', ]
 module.exports =[
     utils.genSidebar('uni-app', children, false ),
 ];

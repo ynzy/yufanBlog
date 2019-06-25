@@ -69,7 +69,7 @@ export default {
 
 <style lang="stylus" scoped>
 .ValineComment {
-  width: 50%;
+  width: 70%;
   padding: 0 2rem;
   margin: 0 auto;
 }
