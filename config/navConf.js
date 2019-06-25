@@ -79,6 +79,14 @@ module.exports = [
     //     ]
     // },
     {
+        text: 'Angular',
+        items: [
+            { text: '基础篇', items: [
+                { text: '构建应用', link: '/Angular/Basic/创建应用/' },
+            ]},
+        ]
+    },
+    {
         text: 'Vue',
         items: [
             { text: '基础篇', items: [

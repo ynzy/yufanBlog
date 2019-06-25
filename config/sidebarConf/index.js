@@ -1,6 +1,8 @@
 //关于
 const CurriculumVitae = require('./About/CurriculumVitae/index');
 const SelfIntroduction = require('./About/SelfIntroduction/index');
+//Angular
+const Basic = require('./Angular/Basic/basic');
 
 //vue
 const BasicGrammar = require('./Vue/Basic/BasicGrammar');
@@ -33,6 +35,8 @@ module.exports = {
     //关于我
     '/About/CurriculumVitae/': CurriculumVitae,
     '/About/SelfIntroduction/': SelfIntroduction,
+    //Angular 基础
+    '/Angular/Basic/': Basic,
     //vue基础
     '/Vue/Basic/BasicGrammar/': BasicGrammar,
     '/Vue/Basic/Computed/': Computed,
