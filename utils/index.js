@@ -5,7 +5,7 @@ const utils = {
             title,   // 必要的
             children,
             collapsable, // 是否折叠侧边栏，可选的, 默认值是 false,
-            sidebarDepth,    // 可选的, 默认值是 1
+            sidebarDepth,    // 可选的, 默认值是 3
             
           }
     }
