@@ -1,5 +1,5 @@
 const utils = require('../../../../utils/index');
-// const children = ['', 'viate1', 'viate2','viate3']
+const children = ['vue介绍', ]
 module.exports =[
-    utils.genSidebar('vue.js介绍' ),
+    utils.genSidebar('vue.js介绍', children, false ),
 ];
