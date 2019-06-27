@@ -6,10 +6,11 @@
 const { readdir, writeFile} = require('fs');
 const { resolve } = require('path');
 
-const FOLDERPATH = '/githubBlog/VuePressBlog/docs/about';
+const FOLDERPATH = '/yufanBlog/docs/Angular/Basic';
 
 //读取文件操作
 readdir(FOLDERPATH, (err, files) => {
+    console.log(files)
     let filenames = [];
     //遍历文件名，文件名为README命名为空,其余添加到文件名数组中
     files.forEach(file => {
