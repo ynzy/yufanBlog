@@ -35,22 +35,25 @@ module.exports = [
     //         ]},
     //     ]
     // },
-    // {
-    //     text: 'Javasctipt',
-    //     items: [
-    //         { text: '运行时', items: [
-    //             { text: '数据结构', link: '/Javasctipt/' },
-    //             { text: '执行过程', link: '/Javasctipt/' },
-    //         ]},
-    //         { text: '文法', items: [
-    //             { text: '词法', link: '/Javasctipt/' },
-    //             { text: '语法', link: '/Javasctipt/' }
-    //         ]},
-    //         { text: '语义', items: [
-    //             { text: '语义', link: '/Javasctipt/' },
-    //         ]},
-    //     ]
-    // },
+    {
+        text: 'Javasctipt',
+        items: [
+            { text: 'ECMAScript6', items: [
+                { text: 'ES6学习', link: '/Javasctipt/ECMAScript6/let和const命令' },
+            ]},
+            // { text: '运行时', items: [
+            //     { text: '数据结构', link: '/Javasctipt/' },
+            //     { text: '执行过程', link: '/Javasctipt/' },
+            // ]},
+            // { text: '文法', items: [
+            //     { text: '词法', link: '/Javasctipt/' },
+            //     { text: '语法', link: '/Javasctipt/' }
+            // ]},
+            // { text: '语义', items: [
+            //     { text: '语义', link: '/Javasctipt/' },
+            // ]},
+        ]
+    },
     // {
     //     text: '浏览器API',
     //     items: [

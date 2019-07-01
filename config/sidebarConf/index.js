@@ -1,6 +1,8 @@
 //关于
 const CurriculumVitae = require('./About/CurriculumVitae/index');
 const SelfIntroduction = require('./About/SelfIntroduction/index');
+// javascript
+const ECMAScript6 = require('./Javascript/ECMAScript6/ECMAScript6')
 //Angular
 const Basic = require('./Angular/Basic/basic');
 
@@ -37,6 +39,8 @@ module.exports = {
     //关于我
     '/About/CurriculumVitae/': CurriculumVitae,
     '/About/SelfIntroduction/': SelfIntroduction,
+    //javascript
+    '/Javasctipt/ECMAScript6/': ECMAScript6,
     //Angular 基础
     '/Angular/Basic/': Basic,
     //vue基础
