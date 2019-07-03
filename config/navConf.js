@@ -87,6 +87,9 @@ module.exports = [
             { text: '基础篇', items: [
                 { text: '构建应用', link: '/Angular/Basic/创建应用/' },
             ]},
+            { text: '实战篇', items: [
+                { text: '旅游清单项目', link: '/Angular/AngularAction/tourismTodo/旅游清单项目/' },
+            ]},
         ]
     },
     {

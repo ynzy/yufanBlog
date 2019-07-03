@@ -5,6 +5,7 @@ const SelfIntroduction = require('./About/SelfIntroduction/index');
 const ECMAScript6 = require('./Javascript/ECMAScript6/ECMAScript6')
 //Angular
 const Basic = require('./Angular/Basic/basic');
+const AngularAction = require('./Angular/AngularAction/tourismTodo');
 
 //vue
 const Introduce = require('./Vue/Basic/Introduce');
@@ -43,6 +44,7 @@ module.exports = {
     '/Javasctipt/ECMAScript6/': ECMAScript6,
     //Angular 基础
     '/Angular/Basic/': Basic,
+    '/Angular/AngularAction/tourismTodo/':AngularAction,
     //vue基础
     '/Vue/Basic/Introduce/': Introduce,
     '/Vue/Basic/BasicGrammar/': BasicGrammar,
