@@ -1,4 +1,4 @@
-# let 和 const 命令
+# 1、let 和 const 命令
 ## 1.let 命令
 
 ### let声明变量
@@ -234,3 +234,27 @@ window.b // undefined
 ```
 代码中，全局变量a由var命令声明，所以它是顶层对象的属性；全局变量b由let命令声明，所以它不是顶层对象的属性，返回undefined。
 ## 5.globalThis对象
+JavaScript 语言存在一个顶层对象，它提供全局环境（即全局作用域），所有代码都是在这个环境中运行。但是，顶层对象在各种实现里面是不统一的。
+- 浏览器里面，顶层对象是window，但 Node 和 Web Worker 没有window。
+- 浏览器和 Web Worker 里面，self也指向顶层对象，但是 Node 没有self。
+- Node 里面，顶层对象是global，但其他环境都不支持。
+* 综上所述，很难找到一种方法，可以在所有情况下，都取到顶层对象。下面是两种勉强可以使用的方法。
+```js
+// 方法一
+(typeof window !== 'undefined'
+   ? window
+   : (typeof process === 'object' &&
+      typeof require === 'function' &&
+      typeof global === 'object')
+     ? global
+     : this);
+
+// 方法二
+var getGlobal = function () {
+  if (typeof self !== 'undefined') { return self; }
+  if (typeof window !== 'undefined') { return window; }
+  if (typeof global !== 'undefined') { return global; }
+  throw new Error('unable to locate global object');
+};
+```
+* 垫片库[global-this](https://github.com/ungap/global-this)模拟了这个提案，可以在所有环境拿到globalThis。
