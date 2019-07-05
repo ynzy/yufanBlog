@@ -417,4 +417,5 @@ npm ERR! Remove the 'private' field from the package.json to publish it.
 参考资料：
 * [Angular Library系列](https://suchenrain.github.io/posts/8912/)
 * [Angular Library 快速入门](http://www.semlinker.com/ng-library-quickstart/#%E5%88%9B%E5%BB%BA-sf-lib-%E7%BB%84%E4%BB%B6)
-* 
+* [npm包发布](https://blog.csdn.net/sinat_36422236/article/details/85051588)
+* [一分钟教你发布npm包](https://www.jianshu.com/p/7bba18925fbf)
