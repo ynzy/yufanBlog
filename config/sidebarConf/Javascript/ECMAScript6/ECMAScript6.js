@@ -1,6 +1,6 @@
 const utils = require('../../../../utils/index');
 const children = ['let和const命令', '变量的解构赋值','字符串的扩展',
-'函数的扩展','对象的扩展','对象的新增方法'
+'函数的扩展','对象的扩展','对象的新增方法','Symbol'
 
 ]
 module.exports =[
