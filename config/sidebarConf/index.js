@@ -34,6 +34,7 @@ const nvmnrm = require('./Others/devEnvironment/nvmnrm');
 const mock = require('./Others/analogData/mock');
 const uniapp = require('./HybridApp/Dclound/uni-app');
 const DcloudAction  = require('./HybridApp/Dclound/DcloudAction');
+const Git = require('./Others/Git/Git');
 
 const link = require('../link.js');
 module.exports = {
@@ -70,8 +71,8 @@ module.exports = {
     '/Others/Blog/Hexo/': Hexo,
     '/Others/Blog/VuePress/': VuePress,
     '/Others/devEnvironment/nvmnrm/': nvmnrm,
-    '/Others/analogData/mock/': mock
-
+    '/Others/analogData/mock/': mock,
+    '/Others/Git/': Git
     
     // '/about':about
     // '/': ['']

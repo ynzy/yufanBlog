@@ -152,6 +152,9 @@ module.exports = [
             { text: '模拟数据', items: [
                 { text: 'mockjs', link: '/Others/analogData/mock/easy-mock本地部署过程/' },
             ]},
+            { text: 'git相关', items: [
+                { text: 'git学习', link: '/Others/Git/git基础' },
+            ]},
         ]
     },
     {
