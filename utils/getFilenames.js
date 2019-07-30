@@ -6,7 +6,7 @@
 const { readdir, writeFile} = require('fs');
 const { resolve } = require('path');
 
-const FOLDERPATH = '/yufanBlog/docs/Angular/Basic';
+const FOLDERPATH = '/yufanBlog/docs/Javasctipt/TypeScript';
 
 //读取文件操作
 readdir(FOLDERPATH, (err, files) => {

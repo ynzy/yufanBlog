@@ -41,6 +41,9 @@ module.exports = [
             { text: 'ECMAScript6', items: [
                 { text: 'ES6学习', link: '/Javasctipt/ECMAScript6/let和const命令' },
             ]},
+            { text: 'TypeScript', items: [
+                { text: 'TypeScript入门', link: '/Javasctipt/TypeScript/什么是TypeScript' },
+            ]},
             // { text: '运行时', items: [
             //     { text: '数据结构', link: '/Javasctipt/' },
             //     { text: '执行过程', link: '/Javasctipt/' },

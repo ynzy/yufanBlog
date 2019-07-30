@@ -3,6 +3,7 @@ const CurriculumVitae = require('./About/CurriculumVitae/index');
 const SelfIntroduction = require('./About/SelfIntroduction/index');
 // javascript
 const ECMAScript6 = require('./Javascript/ECMAScript6/ECMAScript6')
+const TypeScript = require('./Javascript/TypeScript')
 //Angular
 const Basic = require('./Angular/Basic/basic');
 const AngularAction = require('./Angular/AngularAction/tourismTodo');
@@ -43,6 +44,7 @@ module.exports = {
     '/About/SelfIntroduction/': SelfIntroduction,
     //javascript
     '/Javasctipt/ECMAScript6/': ECMAScript6,
+    '/Javasctipt/TypeScript/': TypeScript,
     //Angular 基础
     '/Angular/Basic/': Basic,
     '/Angular/AngularAction/tourismTodo/':AngularAction,
