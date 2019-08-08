@@ -108,15 +108,14 @@ module.exports = [
             ]},
             { text: '进阶篇', items: [
                 { text: 'Render函数', link: '/Vue/Advance/RenderFaction/' },
-                { text: 'webpack', link: '/Vue/Advance/WebPack/' },
+                { text: 'webpack', link: '/Vue/Advance/WebPack/WebPack基础使用方式' },
                 { text: 'Vue-router', link: '/Vue/Advance/VueRouter/' },
                 { text: 'Vuex', link: '/Vue/Advance/Vuex/' },
             ]},
             { text: '实战', items: [
                 { text: '硅谷外卖', link: '/Vue/VueAction/gushop/硅谷外卖day01/' },
                 { text: '仿美团项目', link: '/Vue/VueAction/JFCitySelector/' },
-                { text: '项目总结', link: '/Vue/VueAction/proProcess/vue-cli3项目创建-配置-发布/' },                
-                
+                { text: '项目总结', link: '/Vue/VueAction/proProcess/vue-cli3项目创建-配置-发布/' },              
             ]},
             { text: 'Vue踩坑', items: [
                 { text: '踩坑', link: '/Vue/VuePit/' },

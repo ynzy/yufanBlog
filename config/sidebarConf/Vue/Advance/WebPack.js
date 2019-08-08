@@ -1,5 +1,5 @@
 const utils = require('../../../../utils/index');
-// const children = ['', 'viate1', 'viate2','viate3']
+const children = ['WebPack基础使用方式', ]
 module.exports =[
-    utils.genSidebar('Webpack' ),
+    utils.genSidebar('Webpack',children ),
 ];
