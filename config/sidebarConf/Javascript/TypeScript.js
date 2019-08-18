@@ -4,5 +4,5 @@ const children = ['什么是TypeScript','原始数据类型','任意值','类型
 '进阶','类','类与接口','泛型','声明合并'
 ]
 module.exports =[
-    utils.genSidebar('ECMAScript6学习', children, false ),
+    utils.genSidebar('Typescript学习', children, false ),
 ];

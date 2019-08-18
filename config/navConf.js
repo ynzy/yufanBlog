@@ -123,6 +123,15 @@ module.exports = [
         ]
     },
     {
+        text: '珠峰架构学习笔记',
+        items: [
+            { text: 'javascript高级', items: [
+                { text: '手写Promise', link: '/Zhufeng/Es6/Async' },
+            ]},
+            
+        ]
+    },
+    {
         text: '混合开发',
         items: [
             // { text: 'apicloud', items: [

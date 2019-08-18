@@ -28,6 +28,9 @@ const gushop = require('./Vue/VueAction/gushop');
 const JFCitySelector = require('./Vue//VueAction/JFCitySelector.js');
 const proProcess = require('./Vue//VueAction/proProcess');
 const VuePit = require('./Vue/VuePit/index');
+//珠峰架构学习笔记
+const Es6 = require('./Zhufeng/Es6.js')
+
 //其他
 const VuePress = require('./Others/Blog/VuePress');
 const Hexo = require('./Others/Blog/Hexo');
@@ -38,6 +41,7 @@ const DcloudAction  = require('./HybridApp/Dclound/DcloudAction');
 const Git = require('./Others/Git/Git');
 
 const link = require('../link.js');
+
 module.exports = {
     //关于我
     '/About/CurriculumVitae/': CurriculumVitae,
@@ -66,6 +70,8 @@ module.exports = {
     '/Vue/VueAction/proProcess/': proProcess,
     //vue踩坑
     '/Vue/VuePit/': VuePit,
+    //珠峰架构学习笔记
+    '/Zhufeng/Es6/': Es6,
     //混合开发
     '/HybridApp/Dclound/uni-app/': uniapp,
     '/HybridApp/Dclound/DcloudAction/': DcloudAction,
