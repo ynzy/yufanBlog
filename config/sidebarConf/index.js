@@ -29,6 +29,7 @@ const JFCitySelector = require('./Vue//VueAction/JFCitySelector.js');
 const proProcess = require('./Vue//VueAction/proProcess');
 const VuePit = require('./Vue/VuePit/index');
 //珠峰架构学习笔记
+const Prepare = require('./Zhufeng/Prepare')
 const Es6 = require('./Zhufeng/Es6')
 
 //其他
@@ -71,6 +72,7 @@ module.exports = {
     //vue踩坑
     '/Vue/VuePit/': VuePit,
     //珠峰架构学习笔记
+    '/Zhufeng/Prepare/': Prepare,
     '/Zhufeng/Es6/': Es6,
     //混合开发
     '/HybridApp/Dclound/uni-app/': uniapp,

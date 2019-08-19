@@ -125,6 +125,9 @@ module.exports = [
     {
         text: '珠峰架构学习笔记',
         items: [
+            { text: '预习资料', items: [
+                { text: '预习资料', link: '/Zhufeng/Prepare/01-Async' },
+            ]},
             { text: 'javascript高级', items: [
                 { text: '手写Promise', link: '/Zhufeng/Es6/1.Async' },
             ]},
