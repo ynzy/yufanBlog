@@ -29,7 +29,7 @@ const JFCitySelector = require('./Vue//VueAction/JFCitySelector.js');
 const proProcess = require('./Vue//VueAction/proProcess');
 const VuePit = require('./Vue/VuePit/index');
 //珠峰架构学习笔记
-const Es6 = require('./Zhufeng/Es6.js')
+const Es6 = require('./Zhufeng/Es6')
 
 //其他
 const VuePress = require('./Others/Blog/VuePress');
