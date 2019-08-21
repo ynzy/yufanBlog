@@ -1,3 +1,5 @@
+
+### 网址:https://ynzy.github.io/yufanBlog/
 ---
 home: true
 heroImage: /icons/icon.png
