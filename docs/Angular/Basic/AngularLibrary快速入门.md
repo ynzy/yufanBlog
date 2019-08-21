@@ -386,6 +386,7 @@ export class GetdataComponent implements OnInit {
 {userId: 1, id: 1, title: "delectus aut autem", completed: false}
 ```
 ## 10.将库，发布npm包
+将项目进行打包,进入到项目的`/dist/<你的项目>`进行发布
 1. 创建一个npm的账号
 发布包之前你必须要注册一个npm的账号
 
