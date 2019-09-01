@@ -37,13 +37,20 @@ module.exports = [
     // },
     {
         text: 'Javasctipt',
-        items: [
-            { text: 'ECMAScript6', items: [
-                { text: 'ES6学习', link: '/Javasctipt/ECMAScript6/let和const命令' },
-            ]},
-            { text: 'TypeScript', items: [
-                { text: 'TypeScript入门', link: '/Javasctipt/TypeScript/什么是TypeScript' },
-            ]},
+        items: [{
+                text: 'ECMAScript6',
+                items: [{
+                    text: 'ES6学习',
+                    link: '/Javasctipt/ECMAScript6/let和const命令'
+                }, ]
+            },
+            {
+                text: 'TypeScript',
+                items: [{
+                    text: 'TypeScript入门',
+                    link: '/Javasctipt/TypeScript/什么是TypeScript'
+                }, ]
+            },
             // { text: '运行时', items: [
             //     { text: '数据结构', link: '/Javasctipt/' },
             //     { text: '执行过程', link: '/Javasctipt/' },
@@ -86,52 +93,114 @@ module.exports = [
     // },
     {
         text: 'Angular',
-        items: [
-            { text: '基础篇', items: [
-                { text: '构建应用', link: '/Angular/Basic/创建应用/' },
-            ]},
-            { text: '实战篇', items: [
-                { text: '旅游清单项目', link: '/Angular/AngularAction/tourismTodo/旅游清单项目/' },
-            ]},
+        items: [{
+                text: '基础篇',
+                items: [{
+                    text: '构建应用',
+                    link: '/Angular/Basic/创建应用/'
+                }, ]
+            },
+            {
+                text: '实战篇',
+                items: [{
+                    text: '旅游清单项目',
+                    link: '/Angular/AngularAction/tourismTodo/旅游清单项目/'
+                }, ]
+            },
         ]
     },
     {
         text: 'Vue',
-        items: [
-            { text: '基础篇', items: [
-                { text: 'vue介绍', link: '/Vue/Basic/Introduce/vue介绍' },
-                { text: '基础语法', link: '/Vue/Basic/BasicGrammar/' },
-                { text: '计算属性', link: '/Vue/Basic/Computed/' },
-                { text: '表单与v-model', link: '/Vue/Basic/FormModel/' },
-                { text: '组件', link: '/Vue/Basic/Component/' },
-                { text: '自定义指令', link: '/Vue/Basic/CustomInstruction/' },
-            ]},
-            { text: '进阶篇', items: [
-                { text: 'Render函数', link: '/Vue/Advance/RenderFaction/' },
-                { text: 'webpack', link: '/Vue/Advance/WebPack/WebPack基础使用方式' },
-                { text: 'Vue-router', link: '/Vue/Advance/VueRouter/' },
-                { text: 'Vuex', link: '/Vue/Advance/Vuex/' },
-            ]},
-            { text: '实战', items: [
-                { text: '硅谷外卖', link: '/Vue/VueAction/gushop/硅谷外卖day01/' },
-                { text: '仿美团项目', link: '/Vue/VueAction/JFCitySelector/' },
-                { text: '项目总结', link: '/Vue/VueAction/proProcess/vue-cli3项目创建-配置-发布/' },              
-            ]},
-            { text: 'Vue踩坑', items: [
-                { text: '踩坑', link: '/Vue/VuePit/' },
-            ]},
+        items: [{
+                text: '基础篇',
+                items: [{
+                        text: 'vue介绍',
+                        link: '/Vue/Basic/Introduce/vue介绍'
+                    },
+                    {
+                        text: '基础语法',
+                        link: '/Vue/Basic/BasicGrammar/'
+                    },
+                    {
+                        text: '计算属性',
+                        link: '/Vue/Basic/Computed/'
+                    },
+                    {
+                        text: '表单与v-model',
+                        link: '/Vue/Basic/FormModel/'
+                    },
+                    {
+                        text: '组件',
+                        link: '/Vue/Basic/Component/'
+                    },
+                    {
+                        text: '自定义指令',
+                        link: '/Vue/Basic/CustomInstruction/'
+                    },
+                ]
+            },
+            {
+                text: '进阶篇',
+                items: [{
+                        text: 'Render函数',
+                        link: '/Vue/Advance/RenderFaction/'
+                    },
+                    {
+                        text: 'webpack',
+                        link: '/Vue/Advance/WebPack/WebPack基础使用方式'
+                    },
+                    {
+                        text: 'Vue-router',
+                        link: '/Vue/Advance/VueRouter/'
+                    },
+                    {
+                        text: 'Vuex',
+                        link: '/Vue/Advance/Vuex/'
+                    },
+                ]
+            },
+            {
+                text: '实战',
+                items: [{
+                        text: '硅谷外卖',
+                        link: '/Vue/VueAction/gushop/硅谷外卖day01/'
+                    },
+                    {
+                        text: '仿美团项目',
+                        link: '/Vue/VueAction/JFCitySelector/'
+                    },
+                    {
+                        text: '项目总结',
+                        link: '/Vue/VueAction/proProcess/vue-cli3项目创建-配置-发布/'
+                    },
+                ]
+            },
+            {
+                text: 'Vue踩坑',
+                items: [{
+                    text: '踩坑',
+                    link: '/Vue/VuePit/'
+                }, ]
+            },
         ]
     },
     {
         text: '珠峰架构学习笔记',
-        items: [
-            { text: '预习资料', items: [
-                { text: '预习资料', link: '/Zhufeng/Prepare/01-Async' },
-            ]},
-            { text: 'javascript高级', items: [
-                { text: '手写Promise', link: '/Zhufeng/Es6/1.Async' },
-            ]},
-            
+        items: [{
+                text: '预习资料',
+                items: [{
+                    text: '预习资料',
+                    link: '/Zhufeng/Prepare/01-Async'
+                }, ]
+            },
+            {
+                text: 'javascript高级',
+                items: [{
+                    text: '手写Promise',
+                    link: '/Zhufeng/Es6/1_Async'
+                }, ]
+            },
+
         ]
     },
     {
@@ -141,45 +210,94 @@ module.exports = [
             //     { text: 'apicloud学习', link: '/HybridApp/' },
             //     { text: 'apicloud踩坑', link: '/HybridApp/' },
             // ]},
-            { text: 'Dcloud', items: [
-                { text: 'uni-app', link: '/HybridApp/Dclound/uni-app/初识uni-app/' },
-                { text: 'Dcloud实战', link: '/HybridApp/Dclound/DcloudAction/超英电影预热项目/' },
-                { text: 'Dcloud踩坑', link: '/HybridApp/Dclound/DcloudPit/' },
-            ]},
+            {
+                text: 'Dcloud',
+                items: [{
+                        text: 'uni-app',
+                        link: '/HybridApp/Dclound/uni-app/初识uni-app/'
+                    },
+                    {
+                        text: 'Dcloud实战',
+                        link: '/HybridApp/Dclound/DcloudAction/超英电影预热项目/'
+                    },
+                    {
+                        text: 'Dcloud踩坑',
+                        link: '/HybridApp/Dclound/DcloudPit/'
+                    },
+                ]
+            },
         ]
     },
     {
         text: '其他综合',
-        items: [
-            { text: '开发环境', items: [
-                { text: 'nvm/nrm', link: '/Others/devEnvironment/nvmnrm/' },
-                { text: 'nodeJs', link: '/Others/devEnvironment/nodejs/' },
-            ]},
-            { text: '开发工具', items: [
-                { text: 'VScode', link: '/Others/devTool/VScode/' },
-                { text: 'WebStorm', link: '/Others/devTool/WebStorm/' },
-            ]},
-            { text: '博客', items: [
-                { text: 'hexo', link: '/Others/Blog/Hexo/' },
-                { text: 'VuePress', link: '/Others/Blog/VuePress/vuepress基础搭建/' },
-            ]},
-            { text: '模拟数据', items: [
-                { text: 'mockjs', link: '/Others/analogData/mock/easy-mock本地部署过程/' },
-            ]},
-            { text: 'git相关', items: [
-                { text: 'git学习', link: '/Others/Git/git基础' },
-            ]},
+        items: [{
+                text: '开发环境',
+                items: [{
+                        text: 'nvm/nrm',
+                        link: '/Others/devEnvironment/nvmnrm/'
+                    },
+                    {
+                        text: 'nodeJs',
+                        link: '/Others/devEnvironment/nodejs/'
+                    },
+                ]
+            },
+            {
+                text: '开发工具',
+                items: [{
+                        text: 'VScode',
+                        link: '/Others/devTool/VScode/'
+                    },
+                    {
+                        text: 'WebStorm',
+                        link: '/Others/devTool/WebStorm/'
+                    },
+                ]
+            },
+            {
+                text: '博客',
+                items: [{
+                        text: 'hexo',
+                        link: '/Others/Blog/Hexo/'
+                    },
+                    {
+                        text: 'VuePress',
+                        link: '/Others/Blog/VuePress/vuepress基础搭建/'
+                    },
+                ]
+            },
+            {
+                text: '模拟数据',
+                items: [{
+                    text: 'mockjs',
+                    link: '/Others/analogData/mock/easy-mock本地部署过程/'
+                }, ]
+            },
+            {
+                text: 'git相关',
+                items: [{
+                    text: 'git学习',
+                    link: '/Others/Git/git基础'
+                }, ]
+            },
         ]
     },
     {
         text: '关于',
-        items: [
-            { text: '关于我', items: [
-            { text: '个人介绍', link: '/About/SelfIntroduction/' },
-            ]},
-            { text: '个人简历', items: [
-            { text: '简历', link: '/About/CurriculumVitae/' }
-            ]}
+        items: [{
+                text: '关于我',
+                items: [{
+                    text: '个人介绍',
+                    link: '/About/SelfIntroduction/'
+                }, ]
+            },
+            {
+                text: '个人简历',
+                items: [{
+                    text: '简历',
+                    link: '/About/CurriculumVitae/'
+                }]
+            }
         ]
     }
 ]

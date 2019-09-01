@@ -2,26 +2,29 @@
   <div class="home-main-page">
     <div class="cardpage" style="padding-bottom: 40px;">
       <el-card shadow="always" :body-style="{ padding: '0px' }" class="box-card">
-        <!-- <img
-          :src="./"
-          class="image"
-        > -->
+        <img src="/icons/dabai.png" class="image" />
+
         <div class="nickname">
-          <span class="nick">Ordinary rain</span>
+          <span class="nick">一个前端菜鸟的踩坑之路</span>
         </div>
+        <!-- <div class="nickname">
+          <span class="nick">Ordinary rain</span>
+        </div> -->
         <div style="padding: 16px;" class="motto">
           <span>Stay Hungry, Stay Foolish!</span>
         </div>
-        <el-row class="funct-button" style="padding: 20px;">
-          <el-button round @click="openPage('https://github.com/hirCodd')">Github</el-button>
-          <el-button round @click="openPage('https://blog.csdn.net/HookJony')">简书</el-button>
+        <el-row class="funct-button" style="padding: 20px 0;">
+          <el-button type="primary" round @click="openPage('https://github.com/ynzy')">Github</el-button>
+          <el-button type="info" round @click="openPage('https://www.jianshu.com/u/a119a26f3e98')">简书</el-button>
+          <el-button type="warning" round @click="openPage('https://www.jianshu.com/u/a119a26f3e98')">关于我</el-button>
+          <el-button type="success" round @click="openPage(`/yufanBlog/About/CurriculumVitae/`)">简历</el-button>
         </el-row>
       </el-card>
     </div>
 
-    <hr>
+    <hr />
     <div class="footer">
-      <p>Copyright © 2017-2019 Finen</p>
+      <p>Copyright © 2017-2019 yufan</p>
     </div>
   </div>
 </template>
@@ -133,7 +136,10 @@ export default {
 }
 </style>
 <style>
-.cardpage>.el-card >.el-card__body {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
+.cardpage > .el-card > .el-card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 </style>
