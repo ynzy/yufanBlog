@@ -2,7 +2,7 @@
   <div class="home-main-page">
     <div class="cardpage" style="padding-bottom: 40px;">
       <el-card shadow="always" :body-style="{ padding: '0px' }" class="box-card">
-        <img src="/icons/dabai.png" class="image" />
+        <img src="../public/icons/dabai.png" class="image" />
 
         <div class="nickname">
           <span class="nick">一个前端菜鸟的踩坑之路</span>
@@ -16,8 +16,8 @@
         <el-row class="funct-button" style="padding: 20px 0;">
           <el-button type="primary" round @click="openPage('https://github.com/ynzy')">Github</el-button>
           <el-button type="info" round @click="openPage('https://www.jianshu.com/u/a119a26f3e98')">简书</el-button>
-          <el-button type="warning" round @click="openPage('https://www.jianshu.com/u/a119a26f3e98')">关于我</el-button>
-          <el-button type="success" round @click="openPage(`/yufanBlog/About/CurriculumVitae/`)">简历</el-button>
+          <el-button type="warning" round @click="openPage('https://ynzy.github.io/yufanBlog/About/SelfIntroduction/')">关于我</el-button>
+          <el-button type="success" round @click="openPage(`/About/CurriculumVitae/`)">简历</el-button>
         </el-row>
       </el-card>
     </div>
