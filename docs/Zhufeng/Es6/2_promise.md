@@ -8,10 +8,11 @@
 写一个普通的Promise前要先知道什么是Promise:
 
 * Promise是一个类
-  1. 每次new 一个Promise 都要传递一个执行器,执行器是立即执行的(只要new Promise就执行)
+  1. 每次new 一个Promise 都要传递一个执行器(executor),执行器是立即执行的(只要new Promise就执行)
   2. 执行器函数中有两个参数 resolve,reject
   3. 默认Promise 三个状态 pendding => resolve 表示成功了;reject 表示失败了
   4. 如果一旦成功了 不能改变成失败;一旦失败了,不能再成功了;只有当前状态是pendding时才可以更改状态
+     * 进入失败的方式,调用reject(), 抛出错误 throw new Error();
   5. 每个Promise都有一个then方法
 
 ```js

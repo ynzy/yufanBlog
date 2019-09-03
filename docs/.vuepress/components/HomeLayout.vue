@@ -16,8 +16,8 @@
         <el-row class="funct-button" style="padding: 20px 0;">
           <el-button type="primary" round @click="openPage('https://github.com/ynzy')">Github</el-button>
           <el-button type="info" round @click="openPage('https://www.jianshu.com/u/a119a26f3e98')">简书</el-button>
-          <el-button type="warning" round @click="openPage('https://ynzy.github.io/yufanBlog/About/SelfIntroduction/')">关于我</el-button>
-          <el-button type="success" round @click="openPage(`/About/CurriculumVitae/`)">简历</el-button>
+          <el-button type="warning" round @click="openRouter(`/About/SelfIntroduction/`)">关于我</el-button>
+          <el-button type="success" round @click="openRouter(`/About/CurriculumVitae/`)"> 简历 </el-button>
         </el-row>
       </el-card>
     </div>
@@ -35,6 +35,9 @@ export default {
     return {};
   },
   methods: {
+    openRouter(url) {
+     this.$router.push(url)
+    },
     openPage(url) {
       window.open(url);
     }
