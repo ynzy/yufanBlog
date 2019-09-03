@@ -5,26 +5,30 @@
         <img src="../public/icons/dabai.png" class="image" />
 
         <div class="nickname">
-          <span class="nick">一个前端菜鸟的踩坑之路</span>
+          <span class="nick">{{title}}</span>
         </div>
-        <!-- <div class="nickname">
+        <div style="margin-top: 16px;" class="nickname">
           <span class="nick">Ordinary rain</span>
-        </div> -->
+        </div>
         <div style="padding: 16px;" class="motto">
-          <span>Stay Hungry, Stay Foolish!</span>
+          <span>{{content}}</span>
         </div>
         <el-row class="funct-button" style="padding: 20px 0;">
-          <el-button type="primary" round @click="openPage('https://github.com/ynzy')">Github</el-button>
-          <el-button type="info" round @click="openPage('https://www.jianshu.com/u/a119a26f3e98')">简书</el-button>
+          <el-button type="success" round @click="openRouter(`/About/CurriculumVitae/`)">简历</el-button>
           <el-button type="warning" round @click="openRouter(`/About/SelfIntroduction/`)">关于我</el-button>
-          <el-button type="success" round @click="openRouter(`/About/CurriculumVitae/`)"> 简历 </el-button>
+          <el-button
+            type="info"
+            round
+            @click="openPage('https://www.jianshu.com/u/a119a26f3e98')"
+          >简书</el-button>
+          <el-button type="primary" round @click="openPage('https://github.com/ynzy')">Github</el-button>
         </el-row>
       </el-card>
     </div>
 
     <hr />
     <div class="footer">
-      <p>Copyright © 2017-2019 yufan</p>
+      <p>{{copyright}}</p>
     </div>
   </div>
 </template>
@@ -32,11 +36,15 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      title: "一个前端菜鸟的踩坑之路",
+      content: "Stay Hungry, Stay Foolish!",
+      copyright: "Copyright © 2017-2019 yufan"
+    };
   },
   methods: {
     openRouter(url) {
-     this.$router.push(url)
+      this.$router.push(url);
     },
     openPage(url) {
       window.open(url);
