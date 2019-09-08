@@ -619,3 +619,102 @@ Promise.all(
   console.log(data);
 })
 ```
+
+## static race() 方法
+* 如果有普通值谁先执行完成先执行谁
+* 有一个成功就成功 有一个失败就失败
+```js
+  static race(promises) {
+    return new Promise((resolve, reject) => {
+      for (let i = 0; i < promises.length; i++) {
+        const current = promises[i];
+        if (isPromise(current)) {
+          current.then(() => {
+            resolve(current)
+          }, err => {
+            reject(err)
+          })
+        } else {
+          resolve(current)
+        }
+      }
+    })
+  }
+```
+* 使用:
+```js
+let p1 = new Promise((resolve,reject)=> {
+  setTimeout(() => {
+    reject('ok1')
+  }, 1000);
+})
+
+let p2 = new Promise((resolve,reject)=> {
+  setTimeout(() => {
+    resolve('ok2')
+  }, 2000);
+})
+
+Promise.race([p1,p2,2]).then(data=>{
+  console.log(data);
+  
+},err=> {
+  console.log('---'+err);
+})
+```
+
+## Promise.finally()方法
+* 不管成功还是失败,都会执行
+* 如果finally返回一个新的promise,会等待这个promise完成
+* 并且可以继续链式调用
+```js
+Promise.prototype.finally = function(callback) { //! 26实现finally方法
+    return this.then(val => {
+      // 等待finally中的函数执行完毕,继续执行,finally函数可能返回一个promise,用promise.resolve等待返回
+      return Promise.resolve(callback()).then((value)=>{ //todo这里的value没有返回出去,外部无法获取其值
+        return val
+      })
+    },err => {
+      return Promise.resolve(callback()).then(()=>{throw err})
+    })
+  }
+```
+* 使用
+```js
+Promise.resolve('resolve').finally(()=> {
+  console.log(2);
+  return new Promise((resolve,reject) => {
+    resolve('1')
+  })
+}).then(data=> {
+  console.log(data);
+},err=> {
+  console.log(err);
+})
+```
+
+## static try()
+* 既能捕获同步,又能捕获异步
+* 原生Promise不支持
+```js
+Promise.try = function(callback) { //! 28 实现try方法
+    // 既能捕获同步,又能捕获异步
+    // try返回的是一个promise
+    // 如果callback返回的是普通throw new Error(''),那就把callback也变成promise
+    return new Promise((resolve,reject)=> {
+      return Promise.resolve(callback()).then(resolve,reject)
+    })
+  }
+```
+* 使用:
+```js
+function fn() {
+  // throw new Error('err')
+  return new Promise((resolve,reject)=> {
+    reject('err')
+  })
+}
+Promise.try(fn).catch(err=> {
+  console.log(err);
+})
+```
