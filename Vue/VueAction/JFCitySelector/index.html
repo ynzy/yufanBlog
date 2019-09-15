@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>仿美团项目笔记 | 雨凡技术栈</title>
+    <meta name="description" content="一个前端菜鸟的踩坑之路">
+    
+    
+    <link rel="preload" href="/yufanBlog/assets/css/0.styles.6cd1c111.css" as="style"><link rel="preload" href="/yufanBlog/assets/js/app.eb102ded.js" as="script"><link rel="preload" href="/yufanBlog/assets/js/2.4f286d14.js" as="script"><link rel="preload" href="/yufanBlog/assets/js/119.1b22a40b.js" as="script"><link rel="preload" href="/yufanBlog/assets/js/4.143f6645.js" as="script"><link rel="preload" href="/yufanBlog/assets/js/5.42853010.js" as="script"><link rel="prefetch" href="/yufanBlog/assets/js/10.f5cd79e5.js"><link rel="prefetch" href="/yufanBlog/assets/js/100.e77f5a47.js"><link rel="prefetch" href="/yufanBlog/assets/js/101.f4efa762.js"><link rel="prefetch" href="/yufanBlog/assets/js/102.534b0c20.js"><link rel="prefetch" href="/yufanBlog/assets/js/103.6f6881ac.js"><link rel="prefetch" href="/yufanBlog/assets/js/104.91cdfa20.js"><link rel="prefetch" href="/yufanBlog/assets/js/105.743b41ac.js"><link rel="prefetch" href="/yufanBlog/assets/js/106.864183f2.js"><link rel="prefetch" href="/yufanBlog/assets/js/107.ac877875.js"><link rel="prefetch" href="/yufanBlog/assets/js/108.9b72c29f.js"><link rel="prefetch" href="/yufanBlog/assets/js/109.d1d5fe5f.js"><link rel="prefetch" href="/yufanBlog/assets/js/11.5cc65bb9.js"><link rel="prefetch" href="/yufanBlog/assets/js/110.bc34c32b.js"><link rel="prefetch" href="/yufanBlog/assets/js/111.abd8baf2.js"><link rel="prefetch" href="/yufanBlog/assets/js/112.6ff1cc57.js"><link rel="prefetch" href="/yufanBlog/assets/js/113.b7fac69c.js"><link rel="prefetch" href="/yufanBlog/assets/js/114.82875627.js"><link rel="prefetch" href="/yufanBlog/assets/js/115.f270eeef.js"><link rel="prefetch" href="/yufanBlog/assets/js/116.b403d897.js"><link rel="prefetch" href="/yufanBlog/assets/js/117.e17bae4e.js"><link rel="prefetch" href="/yufanBlog/assets/js/118.d7a885fe.js"><link rel="prefetch" href="/yufanBlog/assets/js/12.0a513196.js"><link rel="prefetch" href="/yufanBlog/assets/js/120.da572f7c.js"><link rel="prefetch" href="/yufanBlog/assets/js/121.31258026.js"><link rel="prefetch" href="/yufanBlog/assets/js/122.1e728b8c.js"><link rel="prefetch" href="/yufanBlog/assets/js/123.ed863cc5.js"><link rel="prefetch" href="/yufanBlog/assets/js/124.679b1d68.js"><link rel="prefetch" href="/yufanBlog/assets/js/125.10ea0921.js"><link rel="prefetch" href="/yufanBlog/assets/js/126.b58382a6.js"><link rel="prefetch" href="/yufanBlog/assets/js/127.ef5b78f7.js"><link rel="prefetch" href="/yufanBlog/assets/js/128.471cd7f6.js"><link rel="prefetch" href="/yufanBlog/assets/js/129.7673a0ab.js"><link rel="prefetch" href="/yufanBlog/assets/js/13.c0f6efac.js"><link rel="prefetch" href="/yufanBlog/assets/js/130.9dd7e1f6.js"><link rel="prefetch" href="/yufanBlog/assets/js/131.3e4236e7.js"><link rel="prefetch" href="/yufanBlog/assets/js/132.27c40584.js"><link rel="prefetch" href="/yufanBlog/assets/js/133.1190a972.js"><link rel="prefetch" href="/yufanBlog/assets/js/134.2c6d93f3.js"><link rel="prefetch" href="/yufanBlog/assets/js/135.6629c837.js"><link rel="prefetch" href="/yufanBlog/assets/js/136.e21c427f.js"><link rel="prefetch" href="/yufanBlog/assets/js/137.18af6654.js"><link rel="prefetch" href="/yufanBlog/assets/js/138.b141eee7.js"><link rel="prefetch" href="/yufanBlog/assets/js/139.d514e416.js"><link rel="prefetch" href="/yufanBlog/assets/js/14.2b95a788.js"><link rel="prefetch" href="/yufanBlog/assets/js/15.89183b6c.js"><link rel="prefetch" href="/yufanBlog/assets/js/16.d3ff3267.js"><link rel="prefetch" href="/yufanBlog/assets/js/17.05d47961.js"><link rel="prefetch" href="/yufanBlog/assets/js/18.558f32c2.js"><link rel="prefetch" href="/yufanBlog/assets/js/19.f3b23523.js"><link rel="prefetch" href="/yufanBlog/assets/js/20.2cadd15f.js"><link rel="prefetch" href="/yufanBlog/assets/js/21.bf7348e7.js"><link rel="prefetch" href="/yufanBlog/assets/js/22.0cf37977.js"><link rel="prefetch" href="/yufanBlog/assets/js/23.6d30b53f.js"><link rel="prefetch" href="/yufanBlog/assets/js/24.b30f5833.js"><link rel="prefetch" href="/yufanBlog/assets/js/25.e3829d3e.js"><link rel="prefetch" href="/yufanBlog/assets/js/26.867cb5a7.js"><link rel="prefetch" href="/yufanBlog/assets/js/27.607071f4.js"><link rel="prefetch" href="/yufanBlog/assets/js/28.e2359d47.js"><link rel="prefetch" href="/yufanBlog/assets/js/29.c585e2eb.js"><link rel="prefetch" href="/yufanBlog/assets/js/3.a0554e34.js"><link rel="prefetch" href="/yufanBlog/assets/js/30.e03dfa32.js"><link rel="prefetch" href="/yufanBlog/assets/js/31.145debe5.js"><link rel="prefetch" href="/yufanBlog/assets/js/32.8078cd61.js"><link rel="prefetch" href="/yufanBlog/assets/js/33.ec130daa.js"><link rel="prefetch" href="/yufanBlog/assets/js/34.89958bce.js"><link rel="prefetch" href="/yufanBlog/assets/js/35.07e4a52a.js"><link rel="prefetch" href="/yufanBlog/assets/js/36.48483935.js"><link rel="prefetch" href="/yufanBlog/assets/js/37.f5da11a4.js"><link rel="prefetch" href="/yufanBlog/assets/js/38.cf066428.js"><link rel="prefetch" href="/yufanBlog/assets/js/39.20c86fda.js"><link rel="prefetch" href="/yufanBlog/assets/js/40.cf94f582.js"><link rel="prefetch" href="/yufanBlog/assets/js/41.24c17c00.js"><link rel="prefetch" href="/yufanBlog/assets/js/42.aa8cd6d6.js"><link rel="prefetch" href="/yufanBlog/assets/js/43.d4fa5ba3.js"><link rel="prefetch" href="/yufanBlog/assets/js/44.798728ab.js"><link rel="prefetch" href="/yufanBlog/assets/js/45.ea514fb7.js"><link rel="prefetch" href="/yufanBlog/assets/js/46.c98e4fba.js"><link rel="prefetch" href="/yufanBlog/assets/js/47.cda2dd45.js"><link rel="prefetch" href="/yufanBlog/assets/js/48.2edfa457.js"><link rel="prefetch" href="/yufanBlog/assets/js/49.5382be88.js"><link rel="prefetch" href="/yufanBlog/assets/js/50.b5531369.js"><link rel="prefetch" href="/yufanBlog/assets/js/51.aefda9e2.js"><link rel="prefetch" href="/yufanBlog/assets/js/52.fbe47fe2.js"><link rel="prefetch" href="/yufanBlog/assets/js/53.13766011.js"><link rel="prefetch" href="/yufanBlog/assets/js/54.2d53e958.js"><link rel="prefetch" href="/yufanBlog/assets/js/55.a84168fd.js"><link rel="prefetch" href="/yufanBlog/assets/js/56.bf8b3cf9.js"><link rel="prefetch" href="/yufanBlog/assets/js/57.25e13206.js"><link rel="prefetch" href="/yufanBlog/assets/js/58.7d220142.js"><link rel="prefetch" href="/yufanBlog/assets/js/59.a9c4c6e0.js"><link rel="prefetch" href="/yufanBlog/assets/js/6.7173eaa0.js"><link rel="prefetch" href="/yufanBlog/assets/js/60.39fdf206.js"><link rel="prefetch" href="/yufanBlog/assets/js/61.a05b9ce2.js"><link rel="prefetch" href="/yufanBlog/assets/js/62.5119059f.js"><link rel="prefetch" href="/yufanBlog/assets/js/63.340c7f4b.js"><link rel="prefetch" href="/yufanBlog/assets/js/64.e639c89d.js"><link rel="prefetch" href="/yufanBlog/assets/js/65.41df2fc0.js"><link rel="prefetch" href="/yufanBlog/assets/js/66.ba24c88b.js"><link rel="prefetch" href="/yufanBlog/assets/js/67.b1ac9e59.js"><link rel="prefetch" href="/yufanBlog/assets/js/68.268a1ca1.js"><link rel="prefetch" href="/yufanBlog/assets/js/69.9fc0ba21.js"><link rel="prefetch" href="/yufanBlog/assets/js/7.cf718883.js"><link rel="prefetch" href="/yufanBlog/assets/js/70.b1f3dbbe.js"><link rel="prefetch" href="/yufanBlog/assets/js/71.34be8733.js"><link rel="prefetch" href="/yufanBlog/assets/js/72.3fbd287c.js"><link rel="prefetch" href="/yufanBlog/assets/js/73.3ab3e2b4.js"><link rel="prefetch" href="/yufanBlog/assets/js/74.155f262f.js"><link rel="prefetch" href="/yufanBlog/assets/js/75.cf1976b3.js"><link rel="prefetch" href="/yufanBlog/assets/js/76.cd6e854e.js"><link rel="prefetch" href="/yufanBlog/assets/js/77.069c75d2.js"><link rel="prefetch" href="/yufanBlog/assets/js/78.036b7513.js"><link rel="prefetch" href="/yufanBlog/assets/js/79.300a1eb1.js"><link rel="prefetch" href="/yufanBlog/assets/js/8.6c2ae40b.js"><link rel="prefetch" href="/yufanBlog/assets/js/80.1e2a51ee.js"><link rel="prefetch" href="/yufanBlog/assets/js/81.0d9f8549.js"><link rel="prefetch" href="/yufanBlog/assets/js/82.b4555390.js"><link rel="prefetch" href="/yufanBlog/assets/js/83.6d807ef7.js"><link rel="prefetch" href="/yufanBlog/assets/js/84.cfa66829.js"><link rel="prefetch" href="/yufanBlog/assets/js/85.c92f3a43.js"><link rel="prefetch" href="/yufanBlog/assets/js/86.844636dc.js"><link rel="prefetch" href="/yufanBlog/assets/js/87.3820850e.js"><link rel="prefetch" href="/yufanBlog/assets/js/88.5bd7401a.js"><link rel="prefetch" href="/yufanBlog/assets/js/89.1594041a.js"><link rel="prefetch" href="/yufanBlog/assets/js/9.f10badbd.js"><link rel="prefetch" href="/yufanBlog/assets/js/90.49bc614c.js"><link rel="prefetch" href="/yufanBlog/assets/js/91.ed04ac09.js"><link rel="prefetch" href="/yufanBlog/assets/js/92.f32be847.js"><link rel="prefetch" href="/yufanBlog/assets/js/93.a03c8cf7.js"><link rel="prefetch" href="/yufanBlog/assets/js/94.67f7bc30.js"><link rel="prefetch" href="/yufanBlog/assets/js/95.1919170d.js"><link rel="prefetch" href="/yufanBlog/assets/js/96.4b53bcdf.js"><link rel="prefetch" href="/yufanBlog/assets/js/97.28307cb3.js"><link rel="prefetch" href="/yufanBlog/assets/js/98.5a2a8596.js"><link rel="prefetch" href="/yufanBlog/assets/js/99.6b1cc404.js">
+    <link rel="stylesheet" href="/yufanBlog/assets/css/0.styles.6cd1c111.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/yufanBlog/" class="home-link router-link-active"><!----> <span class="site-name">雨凡技术栈</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Javasctipt</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>ECMAScript6</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Javasctipt/ECMAScript6/let和const命令.html" class="nav-link">ES6学习</a></li></ul></li><li class="dropdown-item"><h4>TypeScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Javasctipt/TypeScript/什么是TypeScript.html" class="nav-link">TypeScript入门</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Angular</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>基础篇</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Angular/Basic/创建应用/" class="nav-link">构建应用</a></li></ul></li><li class="dropdown-item"><h4>实战篇</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Angular/AngularAction/tourismTodo/旅游清单项目/" class="nav-link">旅游清单项目</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>基础篇</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/Introduce/vue介绍.html" class="nav-link">vue介绍</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/BasicGrammar/" class="nav-link">基础语法</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/Computed/" class="nav-link">计算属性</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/FormModel/" class="nav-link">表单与v-model</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/Component/" class="nav-link">组件</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/CustomInstruction/" class="nav-link">自定义指令</a></li></ul></li><li class="dropdown-item"><h4>进阶篇</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Advance/RenderFaction/" class="nav-link">Render函数</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Advance/WebPack/WebPack基础使用方式.html" class="nav-link">webpack</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Advance/VueRouter/" class="nav-link">Vue-router</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Advance/Vuex/" class="nav-link">Vuex</a></li></ul></li><li class="dropdown-item"><h4>实战</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Vue/VueAction/gushop/硅谷外卖day01/" class="nav-link">硅谷外卖</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/" class="nav-link router-link-exact-active router-link-active">仿美团项目</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/VueAction/proProcess/vue-cli3项目创建-配置-发布/" class="nav-link">项目总结</a></li></ul></li><li class="dropdown-item"><h4>Vue踩坑</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Vue/VuePit/" class="nav-link">踩坑</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">珠峰架构学习笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>预习资料</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Zhufeng/Prepare/01-Async.html" class="nav-link">预习资料</a></li></ul></li><li class="dropdown-item"><h4>javascript高级</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Zhufeng/Es6/1_Async.html" class="nav-link">手写Promise</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">混合开发</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Dcloud</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/HybridApp/Dclound/uni-app/初识uni-app/" class="nav-link">uni-app</a></li><li class="dropdown-subitem"><a href="/yufanBlog/HybridApp/Dclound/DcloudAction/超英电影预热项目/" class="nav-link">Dcloud实战</a></li><li class="dropdown-subitem"><a href="/yufanBlog/HybridApp/Dclound/DcloudPit/" class="nav-link">Dcloud踩坑</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">其他综合</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>开发环境</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/devEnvironment/nvmnrm/" class="nav-link">nvm/nrm</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Others/devEnvironment/nodejs/" class="nav-link">nodeJs</a></li></ul></li><li class="dropdown-item"><h4>开发工具</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/devTool/VScode/" class="nav-link">VScode</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Others/devTool/WebStorm/" class="nav-link">WebStorm</a></li></ul></li><li class="dropdown-item"><h4>博客</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/Blog/Hexo/" class="nav-link">hexo</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Others/Blog/VuePress/vuepress基础搭建/" class="nav-link">VuePress</a></li></ul></li><li class="dropdown-item"><h4>模拟数据</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/analogData/mock/easy-mock本地部署过程/" class="nav-link">mockjs</a></li></ul></li><li class="dropdown-item"><h4>git相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/Git/git基础.html" class="nav-link">git学习</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>关于我</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/About/SelfIntroduction/" class="nav-link">个人介绍</a></li></ul></li><li class="dropdown-item"><h4>个人简历</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/About/CurriculumVitae/" class="nav-link">简历</a></li></ul></li></ul></div></div> <a href="https://github.com/ynzy/yufanBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Javasctipt</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>ECMAScript6</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Javasctipt/ECMAScript6/let和const命令.html" class="nav-link">ES6学习</a></li></ul></li><li class="dropdown-item"><h4>TypeScript</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Javasctipt/TypeScript/什么是TypeScript.html" class="nav-link">TypeScript入门</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Angular</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>基础篇</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Angular/Basic/创建应用/" class="nav-link">构建应用</a></li></ul></li><li class="dropdown-item"><h4>实战篇</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Angular/AngularAction/tourismTodo/旅游清单项目/" class="nav-link">旅游清单项目</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>基础篇</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/Introduce/vue介绍.html" class="nav-link">vue介绍</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/BasicGrammar/" class="nav-link">基础语法</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/Computed/" class="nav-link">计算属性</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/FormModel/" class="nav-link">表单与v-model</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/Component/" class="nav-link">组件</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Basic/CustomInstruction/" class="nav-link">自定义指令</a></li></ul></li><li class="dropdown-item"><h4>进阶篇</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Advance/RenderFaction/" class="nav-link">Render函数</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Advance/WebPack/WebPack基础使用方式.html" class="nav-link">webpack</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Advance/VueRouter/" class="nav-link">Vue-router</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/Advance/Vuex/" class="nav-link">Vuex</a></li></ul></li><li class="dropdown-item"><h4>实战</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Vue/VueAction/gushop/硅谷外卖day01/" class="nav-link">硅谷外卖</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/" class="nav-link router-link-exact-active router-link-active">仿美团项目</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Vue/VueAction/proProcess/vue-cli3项目创建-配置-发布/" class="nav-link">项目总结</a></li></ul></li><li class="dropdown-item"><h4>Vue踩坑</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Vue/VuePit/" class="nav-link">踩坑</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">珠峰架构学习笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>预习资料</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Zhufeng/Prepare/01-Async.html" class="nav-link">预习资料</a></li></ul></li><li class="dropdown-item"><h4>javascript高级</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Zhufeng/Es6/1_Async.html" class="nav-link">手写Promise</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">混合开发</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>Dcloud</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/HybridApp/Dclound/uni-app/初识uni-app/" class="nav-link">uni-app</a></li><li class="dropdown-subitem"><a href="/yufanBlog/HybridApp/Dclound/DcloudAction/超英电影预热项目/" class="nav-link">Dcloud实战</a></li><li class="dropdown-subitem"><a href="/yufanBlog/HybridApp/Dclound/DcloudPit/" class="nav-link">Dcloud踩坑</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">其他综合</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>开发环境</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/devEnvironment/nvmnrm/" class="nav-link">nvm/nrm</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Others/devEnvironment/nodejs/" class="nav-link">nodeJs</a></li></ul></li><li class="dropdown-item"><h4>开发工具</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/devTool/VScode/" class="nav-link">VScode</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Others/devTool/WebStorm/" class="nav-link">WebStorm</a></li></ul></li><li class="dropdown-item"><h4>博客</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/Blog/Hexo/" class="nav-link">hexo</a></li><li class="dropdown-subitem"><a href="/yufanBlog/Others/Blog/VuePress/vuepress基础搭建/" class="nav-link">VuePress</a></li></ul></li><li class="dropdown-item"><h4>模拟数据</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/analogData/mock/easy-mock本地部署过程/" class="nav-link">mockjs</a></li></ul></li><li class="dropdown-item"><h4>git相关</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/Others/Git/git基础.html" class="nav-link">git学习</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">关于</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>关于我</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/About/SelfIntroduction/" class="nav-link">个人介绍</a></li></ul></li><li class="dropdown-item"><h4>个人简历</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/yufanBlog/About/CurriculumVitae/" class="nav-link">简历</a></li></ul></li></ul></div></div> <a href="https://github.com/ynzy/yufanBlog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>仿美团项目</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/yufanBlog/Vue/VueAction/JFCitySelector/" class="active sidebar-link">仿美团项目笔记</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/#一、技术选型" class="sidebar-link">一、技术选型</a></li><li class="sidebar-sub-header"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/#二、src的项目结构" class="sidebar-link">二、src的项目结构</a></li><li class="sidebar-sub-header"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/#三、vant和muse-ui的引入" class="sidebar-link">三、vant和muse-ui的引入</a></li><li class="sidebar-sub-header"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/#四、tabbar组件实现及路由跳转实现" class="sidebar-link">四、tabbar组件实现及路由跳转实现</a></li><li class="sidebar-sub-header"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/#五、页面拆分成组件" class="sidebar-link">五、页面拆分成组件</a></li><li class="sidebar-sub-header"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/#六、api接口的封装" class="sidebar-link">六、api接口的封装</a></li><li class="sidebar-sub-header"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/#七、使用vuex管理数据" class="sidebar-link">七、使用vuex管理数据</a></li><li class="sidebar-sub-header"><a href="/yufanBlog/Vue/VueAction/JFCitySelector/#八、制作svg图标，引入自定义图标" class="sidebar-link">八、制作svg图标，引入自定义图标</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><p>在学习仿美团项目时，对于vue结构、组件拆分布局，路由结构划分、提取公共的url接口上又有了新的收获，进行一些总结</p> <h2 id="一、技术选型"><a href="#一、技术选型" aria-hidden="true" class="header-anchor">#</a> 一、技术选型</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;axios&quot;: &quot;^0.18.0&quot;,
+&quot;muse-ui&quot;: &quot;^3.0.2&quot;,   //按需引用
+&quot;node-sass&quot;: &quot;^4.11.0&quot;,
+&quot;vant&quot;: &quot;^1.6.7&quot;,    //全局使用
+&quot;vue&quot;: &quot;^2.5.2&quot;,
+&quot;vue-router&quot;: &quot;^3.0.1&quot;,
+&quot;vuex&quot;: &quot;^3.1.0&quot;,
+&quot;less&quot;: &quot;^3.9.0&quot;,
+&quot;less-loader&quot;: &quot;^4.1.0&quot;,
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p><a href="https://github.com/ynzy/vue-project/tree/master/imitate-meituan" target="_blank" rel="noopener noreferrer">项目地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="二、src的项目结构"><a href="#二、src的项目结构" aria-hidden="true" class="header-anchor">#</a> 二、src的项目结构</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>|--src
+|  |-- api //存放公共的url和封装axios获取数据方法
+|  |-- components  //存放公共的组件
+|  |-- pages  //存放单个组件的页面
+|  |-- Museui.js  //按需引入museui的组件
+|  |-- store.js   //进行数据管理
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="三、vant和muse-ui的引入"><a href="#三、vant和muse-ui的引入" aria-hidden="true" class="header-anchor">#</a> 三、vant和muse-ui的引入</h2> <h4 id="main-js"><a href="#main-js" aria-hidden="true" class="header-anchor">#</a> main.js</h4> <h5 id="_1、全局引入vant"><a href="#_1、全局引入vant" aria-hidden="true" class="header-anchor">#</a> 1、全局引入vant</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Vant from 'vant';
+import 'vant/lib/index.css';
+Vue.use(Vant);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h5 id="_2、按需引入muse-ui"><a href="#_2、按需引入muse-ui" aria-hidden="true" class="header-anchor">#</a> 2、按需引入muse-ui</h5> <div class="language- line-numbers-mode"><pre class="language-text"><code>
+import Vue from 'vue';
+import 'muse-ui/lib/styles/base.less';
+import {
+  AppBar,
+  Avatar,
+  Badge,
+  BottomNav,
+  Button,
+  TextField,
+  theme
+} from 'muse-ui';
+import 'muse-ui/lib/styles/theme.less';
+
+Vue.use(Icon);
+Vue.use(Button);
+Vue.use(AppBar);
+Vue.use(BottomNav);
+Vue.use(Paper);
+Vue.use(TextField);
+Vue.use(Badge);
+Vue.use(Avatar);
+Vue.use(theme);
+//自定义主题
+theme.add('teal', {
+  primary: '#009688',
+  secondary: '#ff4081',
+  success: '#4caf50',
+  warning: '#ffeb3b',
+}, 'light');
+
+theme.use('teal');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><h2 id="四、tabbar组件实现及路由跳转实现"><a href="#四、tabbar组件实现及路由跳转实现" aria-hidden="true" class="header-anchor">#</a> 四、tabbar组件实现及路由跳转实现</h2> <ol><li>底部导航菜单栏使用muse-ui的tabbar组件，菜单页面路由通过Main.vue在底部菜单之上实现。</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;router-view/&gt;
+    &lt;mu-paper class=&quot;g-footer&quot;&gt;
+      &lt;mu-bottom-nav :value=&quot;bottomNav&quot;&gt;
+        &lt;mu-bottom-nav-item to=&quot;/home&quot; value=&quot;/home&quot; title=&quot;首页&quot; icon=&quot;home&quot;&gt;&lt;/mu-bottom-nav-item&gt;
+        &lt;mu-bottom-nav-item to=&quot;/recent&quot; value=&quot;/recent&quot; title=&quot;附近&quot; icon=&quot;pin_drop&quot;&gt;&lt;/mu-bottom-nav-item&gt;
+        &lt;mu-bottom-nav-item to=&quot;/guang&quot; value=&quot;/guang&quot; title=&quot;逛一逛&quot; icon=&quot;language&quot;&gt;&lt;/mu-bottom-nav-item&gt;
+        &lt;mu-bottom-nav-item to=&quot;/order&quot; value=&quot;/order&quot; title=&quot;订单&quot; icon=&quot;assignment&quot;&gt;&lt;/mu-bottom-nav-item&gt;
+        &lt;mu-bottom-nav-item to=&quot;/me&quot; value=&quot;/me&quot; title=&quot;我的&quot; icon=&quot;account_circle&quot;&gt;&lt;/mu-bottom-nav-item&gt;
+      &lt;/mu-bottom-nav&gt;
+    &lt;/mu-paper&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  data() {
+    return {
+      bottomNav: &quot;/home&quot;
+    };
+  },
+  methods: {},
+  mounted() {
+    //当每次重新挂载(重新刷新)时，重新匹配路由，使导航和路由路径相匹配
+    // console.log(this.$route.path);
+    let path = this.$route.path;
+    if(path==&quot;/&quot;)path=&quot;/home&quot;;
+    this.bottomNav = path;
+  }
+};
+&lt;/script&gt;
+&lt;style lang=&quot;less&quot; &gt;
+//TODO:由于museui字体图标无法显示，直接引入cdn库
+@import &quot;http://cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.css&quot;;
+
+.g-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.mu-bottom-item {
+  min-width: 0.62rem;
+}
+&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br></div></div><ol start="2"><li>页面路由结构</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>routes: [
+    {
+      path: '/',
+      component: Main,
+      children: [  //TODO: 设置子路由
+        {
+          path: '',  //设置空路由，父级匹配一个子路由
+          name: 'main',
+          component: Home
+        },
+        {
+          path: '/home',
+          name: 'home',
+          component: Home
+        },
+        {
+          path: '/recent',
+          name: 'recent',
+          component: Recent
+        },
+        {
+          path: '/guang',
+          name: 'guang',
+          component: Guang
+        },
+        {
+          path: '/order',
+          name: 'order',
+          component: Order
+        },
+        {
+          path: '/me',
+          name: 'me',
+          component: Me
+        }
+      ]
+    },
+    {
+      path: '/meishi',  //单页面路由，不匹配在tabbar上
+      name: 'meishi',
+      component: MeShi
+    }
+  ]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><ul><li>由于页面刷新时，底部菜单索引自动匹配第一个路由页面，导致页面与底部菜单活跃状态不符，所以页面重新挂载时，获取此时路由的值，重新给底部菜单活跃项赋值。</li></ul> <h2 id="五、页面拆分成组件"><a href="#五、页面拆分成组件" aria-hidden="true" class="header-anchor">#</a> 五、页面拆分成组件</h2> <ul><li>所有的页面中一部分都拆分成单个组件去进行渲染</li> <li>示例：</li></ul> <h2 id="六、api接口的封装"><a href="#六、api接口的封装" aria-hidden="true" class="header-anchor">#</a> 六、api接口的封装</h2> <ol><li>--api--config.js,存放公共的url地址</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>var url = &quot; https://www.easy-mock.com/mock/5c7d08e7b7a08d1246bef9ff/api/&quot;
+export {url};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="2"><li>---api--shop.js,存放获取商品列表的axios方法</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>import axios from 'axios'
+import { url } from './config'
+let getShopList = (page) =&gt; {
+  return axios({
+    method: &quot;post&quot;,
+    url: url + &quot;shopList&quot;,
+    data: {
+      page: page,
+      pageSize: 10
+    }
+  })
+}
+export {
+  getShopList
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ol start="3"><li>api接口的使用--pages--home-HomeShop.vue</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;van-list v-model=&quot;loading&quot; :finished=&quot;finished&quot; finished-text=&quot;没有更多了&quot; @load=&quot;onLoad&quot;&gt;
+      &lt;van-card v-for=&quot;(item,index) in list&quot; :key=&quot;index&quot;&gt;
+        &lt;div slot=&quot;title&quot;&gt;
+          &lt;strong&gt;{{item.desc}}&lt;/strong&gt;
+          &lt;div class=&quot;distance&quot;&gt;&lt; 500m&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div slot=&quot;desc&quot;&gt;{{item.pos}}{{item.id}}&lt;/div&gt;
+        &lt;div slot=&quot;price&quot;&gt;
+          &lt;span&gt;￥{{item.price}}&lt;/span&gt;
+          &lt;van-tag size=&quot;medium&quot; type=&quot;danger&quot;&gt;劲爆&lt;/van-tag&gt;
+          &lt;div class=&quot;workoff&quot;&gt;已售{{item.sales}}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div slot=&quot;thumb&quot;&gt;
+          &lt;img :src=&quot;'/static/shoplog/'+ item.imgurl&quot; alt&gt;
+        &lt;/div&gt;
+      &lt;/van-card&gt;
+    &lt;/van-list&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import { getShopList } from &quot;@/api/shop&quot;;  //引入获取商品列表分页数据的方法
+export default {
+  data() {
+    return {
+       list: [],
+      loading: false,
+      finished: false
+       page: 0
+    };
+  },
+  mounted() {},
+  methods: {
+    onLoad() {
+      this.page++
+
+      // 数据全部加载完成
+      setTimeout(() =&gt; {
+        getShopList(this.page)
+          .then(res =&gt; {
+            if (res.data.success) {
+              //遍历获取的数据添加到商品列表数组中进行渲染
+               res.data.shop.forEach(item =&gt; {
+                 this.list.push(item);
+               });
+              
+              // 加载状态结束
+              this.loading = false;
+            }
+          })
+          .catch(function(err) {
+            alert(&quot;接口错误：&quot; + err);
+          });
+      }, 2000);
+      //如果获取数据长度超过了70,则不再获取数据
+      if (this.list.length &gt;= 70) {
+        this.finished = true;
+      }
+    }
+  }
+};
+&lt;/script&gt;
+
+&lt;style lang=&quot;less&quot; scoped&gt;
+.van-list {
+  //深度作用选择器: 如果你希望 scoped 样式中的一个选择器能够作用得“更深”，例如影响子组件，你可以使用 &gt;&gt;&gt; 操作符,使用预编译器则使用 &quot;/deep/ &quot;
+  /deep/ .van-card {   
+    background: #fff;
+  }
+}
+.van-card__price {
+  margin-top: 5px;
+  width: 100%;
+}
+.van-card__content {
+  strong {
+    font-size: 14px;
+  }
+}
+.distance {
+  float: right;
+  width: 0.6rem;
+  text-align: right;
+  font-weight: 500;
+  color: #000;
+}
+.workoff {
+  float: right;
+  width: 0.6rem;
+  text-align: right;
+  font-weight: 500;
+  color: #000;
+}
+&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br></div></div><h2 id="七、使用vuex管理数据"><a href="#七、使用vuex管理数据" aria-hidden="true" class="header-anchor">#</a> 七、使用vuex管理数据</h2> <ul><li>创建store.js对商品列表的分页数据进行管理</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex);
+
+var state = {
+  shop: {
+    num: 1,
+    list: [],
+    page: 0
+  }
+}
+
+const mutations = {
+  setshoplist(state, data) {  //设置商品列表数据
+    state.shop.list = state.shop.list.concat(data)  //拼接数组
+  },
+  nextpage(state){  //下一页
+    state.shop.page++;
+  }
+}
+
+export default new Vuex.Store({
+  state,
+  mutations
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><ul><li>在HomeShop.vue页面使用vuex接收数据</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt; 
+import { mapState } from &quot;vuex&quot;;  //引入vuex数据mapState辅助函数
+import { getShopList } from &quot;@/api/shop&quot;;  //引入获取商品列表分页数据的方法
+
+export default {
+  data() {
+    return {
+      // list: [],
+      loading: false,
+      finished: false
+      // page: 0
+    };
+  },
+  computed: {
+    ...mapState({
+      list: state =&gt; state.shop.list,  //获取vuex中的list数据
+      page: state =&gt; state.shop.page   //获取vuex中的分页数据
+    })
+  },
+  mounted() {},
+  methods: {
+    onLoad() {
+      //每次加载刷新，页数加1
+      this.$store.commit(&quot;nextpage&quot;);  //提交页数突变的方法
+
+      // 数据全部加载完成
+      setTimeout(() =&gt; {
+        getShopList(this.page)
+          .then(res =&gt; {
+            if (res.data.success) {
+              this.$store.commit(&quot;setshoplist&quot;, res.data.shop);  //提交商品数据突变方法
+              // 加载状态结束
+              this.loading = false;
+            }
+          })
+          .catch(function(err) {
+            alert(&quot;接口错误：&quot; + err);
+          });
+      }, 2000);
+      //如果获取数据长度超过了70,则不再获取数据
+      if (this.list.length &gt;= 70) {
+        this.finished = true;
+      }
+    }
+  }
+};
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br></div></div><h2 id="八、制作svg图标，引入自定义图标"><a href="#八、制作svg图标，引入自定义图标" aria-hidden="true" class="header-anchor">#</a> 八、制作svg图标，引入自定义图标</h2> <ol><li>使用Ai制作svg图标，保存为svg格式</li> <li>进入<a href="https://icomoon.io/" target="_blank" rel="noopener noreferrer">制作字体图标官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li> <li><img src="https://upload-images.jianshu.io/upload_images/13505073-9ef52fe4d4c425fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导入svg图标"> <img src="https://upload-images.jianshu.io/upload_images/13505073-3fad0e483ac4358d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="导入svg图标"></li> <li>也可以选择观望已有的图标，选择之后下方有显示，
+<img src="https://upload-images.jianshu.io/upload_images/13505073-dd2da770c8da4987.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></li> <li>点击下方<em>Generate Font F</em>按钮对选择的图标进行设置，然后下载
+<img src="https://upload-images.jianshu.io/upload_images/13505073-74c8a897cca4700d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="点击preferences进行个性化设置"></li> <li>得到解压包以后，把解压的文件放在<code>assets</code>文件夹中，此文件夹会被打包编译，</li> <li>解决样式冲突问题：</li></ol> <ul><li>由于项目引入了其他ui框架，本身有字体图标，会与自定义图标冲突，需要解决</li> <li>编写--style.scss文件</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>//TODO: 解决字体图标库与框架的字体图标库的冲突问题
+//以&quot;icon-mt-&quot;打头，包含&quot; icon-mt-&quot;的，css3选择器
+i[class^=&quot;icon-mt-&quot;],i[class*=&quot; icon-mt-&quot;] {
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ol start="8"><li>如果想添加样式直接在--style.scss文件添加</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>.icon-mt-hezuo {
+  &amp;:before {
+    content: $icon-mt-hezuo;     
+    color: $icon-mt-color;
+  }
+}
+//默认没有状态样式，自定义添加
+.icon-mt-hezuo:active {
+  &amp;:before {
+    content: $icon-mt-hezuo;     
+    color: red;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/ynzy/yufanBlog/edit/master/docs/Vue/VueAction/JFCitySelector/README.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2019-5-4 22:39:28</span></div></footer> <!---->  <div class="ValineComment" data-v-6bc5d451><div id="vcomments" data-v-6bc5d451></div></div></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/yufanBlog/assets/js/app.eb102ded.js" defer></script><script src="/yufanBlog/assets/js/2.4f286d14.js" defer></script><script src="/yufanBlog/assets/js/119.1b22a40b.js" defer></script><script src="/yufanBlog/assets/js/4.143f6645.js" defer></script><script src="/yufanBlog/assets/js/5.42853010.js" defer></script>
+  </body>
+</html>

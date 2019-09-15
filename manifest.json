@@ -1,0 +1,17 @@
+{
+    "name": "张雨凡的个人博客",
+    "short_name": "张雨凡",
+    "description": "前端菜鸟的成长之路",
+    "icons": [
+      {
+        "src": "/icons/icon.png",
+        "sizes": "799x638",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#2196f3",
+    "theme_color": "#2196f3"
+}
+  
