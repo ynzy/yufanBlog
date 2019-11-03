@@ -196,7 +196,7 @@ module.exports = [
             {
                 text: 'javascript高级',
                 items: [{
-                    text: '手写Promise',
+                    text: '高阶函数异步编程',
                     link: '/Zhufeng/Es6/1_Async'
                 }, ]
             },
